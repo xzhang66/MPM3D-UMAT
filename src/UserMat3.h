@@ -4,7 +4,7 @@
 #include <string>
 using namespace std;
 
-class __declspec(dllexport) USERMAT3
+class DEVELOPMENT_EXPORT USERMAT3
 {
 public:
 	int UserDefinedNum; //!< 粒子携带用户自定义变量数目
@@ -14,7 +14,9 @@ public:
 	USERMAT3();
 	double SoundSpeed(double Cur_Den);
 	double ShearSoundSpeed(double Cur_Den);
+	void EquivalentStress();
 	void UpdateStress(double (&de)[6], double (&vort)[6], double vold, double dt, double Cur_Den, double mass, double clength);
 	void Write(ofstream &os);
+	void Initialize();
 	void DebugInfo();
 };

@@ -5,6 +5,7 @@ USERMAT5::USERMAT5()
 {
 	// 请勿修改
 	prop = new Prop;
+	Density = 0.0;
 
 	// 用户修改此值
 	UserDefinedNum = 0;
@@ -17,6 +18,10 @@ USERMAT5::USERMAT5()
 }
 
 // 用户实现
+void USERMAT5::Initialize()
+{
+}
+
 double USERMAT5::SoundSpeed(double Cur_Den)
 {
 	return 0.0;
@@ -26,6 +31,10 @@ double USERMAT5::ShearSoundSpeed(double Cur_Den)
 {
 	return 0.0;
 }
+void USERMAT5::EquivalentStress()
+{
+}
+
 void USERMAT5::UpdateStress(double (&de)[6], double (&vort)[6], double vold, double dt, double Cur_Den, double mass, double clength)
 {
 }
@@ -36,5 +45,5 @@ void USERMAT5::Write(ofstream &os)
 
 void USERMAT5::DebugInfo()
 {
-	cout << "this is USERMAT5 debuginfo" << endl;
+	cout << "this is USERMAT debuginfo" << endl;
 }

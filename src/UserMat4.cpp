@@ -5,6 +5,7 @@ USERMAT4::USERMAT4()
 {
 	// 请勿修改
 	prop = new Prop;
+	Density = 0.0;
 
 	// 用户修改此值
 	UserDefinedNum = 0;
@@ -17,6 +18,10 @@ USERMAT4::USERMAT4()
 }
 
 // 用户实现
+void USERMAT4::Initialize()
+{
+}
+
 double USERMAT4::SoundSpeed(double Cur_Den)
 {
 	return 0.0;
@@ -25,6 +30,9 @@ double USERMAT4::SoundSpeed(double Cur_Den)
 double USERMAT4::ShearSoundSpeed(double Cur_Den)
 {
 	return 0.0;
+}
+void USERMAT4::EquivalentStress()
+{
 }
 void USERMAT4::UpdateStress(double (&de)[6], double (&vort)[6], double vold, double dt, double Cur_Den, double mass, double clength)
 {
@@ -36,5 +44,5 @@ void USERMAT4::Write(ofstream &os)
 
 void USERMAT4::DebugInfo()
 {
-	cout << "this is USERMAT4 debuginfo" << endl;
+	cout << "this is USERMAT debuginfo" << endl;
 }
