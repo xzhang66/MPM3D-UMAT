@@ -5,6 +5,9 @@
 #else
 #define DEVELOPMENT_EXPORT
 #endif
+
+#include <cstddef>
+
 // 用户自定义的质点信息
 #define Sxx SD[0]
 #define Syy SD[1]

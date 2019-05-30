@@ -2,6 +2,8 @@
 #include "Prop.h"
 #include <map>
 #include <string>
+#include <math.h>
+
 using namespace std;
 
 class DEVELOPMENT_EXPORT USERMAT2
