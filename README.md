@@ -4,7 +4,7 @@ MPM3D-UMAT is the User Defined Material interface for the 3D explicit and parall
 
 ## How to use it
 
-1. Clone or download the source code from the [github repository][github-mpm3d-umat].
+1. Clone or [download][download] the source code from the [github repository][github-mpm3d-umat].
 2. Use [cmake][cmake] to generate the project.
 3. Compile the source code and generate the DLL file (usermat.dll).
 4. Replace the DLL file with the same name in the MPM3D binary directory.
@@ -71,4 +71,5 @@ To illustrate how to write an user defined material model, the USERMAT1 and USER
 [comdyn]:http://comdyn.hy.tsinghua.edu.cn/english
 [xzhang]:http://comdyn.hy.tsinghua.edu.cn/english/xzhang
 [github-mpm3d-umat]:https://github.com/xzhang66/MPM3D-UMAT
+[download]:https://github.com/xzhang66/MPM3D-UMAT/archive/master.zip
 
